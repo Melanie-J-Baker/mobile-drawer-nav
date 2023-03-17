@@ -6,7 +6,8 @@
 }
 
 .content {
-  background-color: rgb(55, 55, 206);
+  background-image: url(image.jpg);
+  background-size: 100vw 100vh;
   color: white;
   position: relative;
   height: 100vh;
@@ -16,20 +17,21 @@
 .open-btn {
   width: 40px;
   margin: 20px;
-  display: none;
+  display: block;
 }
 
 .menu {
   position: absolute;
   height: 100vh;
   width: 100vw;
-  display: grid;
+  display: none;
   grid-template-rows: repeat(auto-fit, 1fr);
   z-index: 1;
   justify-content: center;
   align-items: baseline;
   text-align: center;
   justify-items: center;
+  background: linear-gradient(45deg, rgb(55, 55, 206), rgb(2, 2, 49));
 }
 
 .menu-item {
