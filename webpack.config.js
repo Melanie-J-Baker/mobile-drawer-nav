@@ -1,13 +1,13 @@
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const webpack = require("webpack");
 module.exports = {
   devtool: "inline-source-map",
-  devServer: {
-    static: "./dist",
-  },
   entry: "./src/index.js",
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
+    clean: true,
   },
   mode: "development",
   module: {
@@ -33,4 +33,12 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: "Mobile Drawer Navigation",
+      template: __dirname + "/dist/index.html",
+      filename: "index.html",
+      inject: "body",
+    }),
+  ],
 };
