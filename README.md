@@ -1,6 +1,6 @@
 # mobile-drawer-nav
 
-https://melanie-j-baker.github.io/mobile-drawer-nav/
+Try it here: https://melanie-j-baker.github.io/mobile-drawer-nav/
 
 Creating a mobile drawer-style navigation menu with JavaScript. Completed as part of the Odin Project.
 
